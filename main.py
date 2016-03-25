@@ -22,7 +22,7 @@ def main():
     file = open('sample.txt', 'r')
     lines = file.readlines()
     file.close()
-    sample = map(int, lines[0])
+    sample = map(int, lines[0][:-1])
 
     # Второй аргумент --- максимальный размер (т.е. n) подсчитываемых n-грамм
     stat(sample, 10)
